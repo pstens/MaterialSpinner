@@ -1,3 +1,9 @@
+# Changes
+
+* Inflate popup window on top of spinner if placed on bottom of screen
+
+---
+
 <h1 align="center">Material Spinner</h1>
 
 <p align="center">
