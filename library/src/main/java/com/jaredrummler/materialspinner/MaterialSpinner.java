@@ -485,7 +485,11 @@ public class MaterialSpinner extends TextView {
         animateArrow(true);
       }
       nothingSelected = true;
-      popupWindow.showAsDropDown(this);
+      int[] location = new int[2];
+      getLocationInWindow(location);
+      int x = location[0];
+      int y = getHeight() + location[1];
+      popupWindow.showAtLocation(this, Gravity.TOP | Gravity.START, x, y);
     }
   }
 
